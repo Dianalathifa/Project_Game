@@ -68,9 +68,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qb5xc"]
-radius = 7.0
-height = 48.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3pbj"]
+size = Vector2(20, 46)
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(-230, -331)
@@ -83,11 +82,11 @@ scale = Vector2(0.671875, 0.570313)
 sprite_frames = SubResource("SpriteFrames_6hdqq")
 animation = &"robot"
 autoplay = "robot"
-frame_progress = 0.789216
+frame_progress = 0.150758
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(231, 327)
-shape = SubResource("CapsuleShape2D_qb5xc")
+position = Vector2(231, 331)
+shape = SubResource("RectangleShape2D_w3pbj")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(231, 327)

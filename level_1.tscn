@@ -719,17 +719,18 @@ offset_bottom = 59.0
 text = "Level 1"
 
 [node name="Door" parent="." instance=ExtResource("4_mghrt")]
-position = Vector2(1112, 360)
+position = Vector2(1125, 342)
+target_level_path = "res://level_2.tscn"
 
 [node name="Player" type="Node" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource("3_0e7d7")]
-position = Vector2(-46, -60)
+position = Vector2(-198, -57)
 
 [node name="Mobs" type="Node" parent="."]
 
 [node name="Enemy" parent="Mobs" instance=ExtResource("5_x0w8q")]
-position = Vector2(372, 308)
+position = Vector2(371, 347)
 
 [node name="Node2D" parent="." instance=ExtResource("6_l7sur")]
 
@@ -739,4 +740,3 @@ stream = ExtResource("7_8x60x")
 autoplay = true
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
-[connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
